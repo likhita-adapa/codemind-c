@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 int main()
 {
@@ -19,5 +18,5 @@ int main()
     {
     printf("False");
     }
-    return 0;
+    return 0; return 0;
 }
