@@ -6,5 +6,4 @@ int main()
     scanf("%f",&r);
     x=3.14*r*r;
     printf("%.2f",x);
-    
 }
