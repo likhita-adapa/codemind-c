@@ -2,16 +2,36 @@
 #include<string.h>
 int main()
 {
-    char str[100],c;
-    int l,i;
-    fgets(str,100,stdin);
-    l=strlen(str);
-    for(i=0;i<l/2;i++)
+    char s[100];
+    scanf("%[^
+]s",s);
+    int i,j,c=1,d=0,l,a[100];
+    l=strlen(s);
+    a[0]=l;
+    for(i=l-1;i>=0;i--)
     {
-        c=str[i];
-        str[i]=str[l-1-i];
-        str[l-1-i]=c;
+        if(s[i]==' ')
+        {
+            a[c]=i;
+            c++;
+        }
     }
-    printf("%s",str); 
-    return 0;
+    for(i=l-1;i>=0;i--)
+    {
+        if(s[i]==' '||i==0)
+        {
+            if(i==0)
+            {
+                i=-1;
+            }
+            for(j=i+1;j<a[d];j++)
+            {
+                printf("%c",s[j]);
+                
+            }
+            d++;
+            if(i!=0)
+            printf(" ");
+        }
+    }
 }
